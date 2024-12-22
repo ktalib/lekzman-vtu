@@ -2,8 +2,8 @@
 
 A modern Virtual Top-Up (VTU) application for Nigerian electricity bill payments and airtime purchases. This web application provides a user-friendly interface for managing utility payments and mobile top-ups.
 
-![Lekzman Logo](https://raw.githubusercontent.com/ktalib/lekzman-vtu/assets/logo.png)
-![Lekzman Screensnap](https://raw.githubusercontent.com/ktalib/lekzman-vtu/assets/1.png)![Lekzman Screensnap](https://raw.githubusercontent.com/ktalib/lekzman-vtu/assets/2.png)![Lekzman Screensnap](https://raw.githubusercontent.com/ktalib/lekzman-vtu/assets/3.png)![Lekzman Screensnap](https://raw.githubusercontent.com/ktalib/lekzman-vtu/assets/4.png)![Lekzman Screensnap](https://raw.githubusercontent.com/ktalib/lekzman-vtu/assets/5.png)
+![Lekzman Logo](https://raw.githubusercontent.com/ktalib/lekzman-vtu/assets/images/logo.png)
+![Lekzman Screensnap](https://raw.githubusercontent.com/ktalib/lekzman-vtu/assets/images/1.png)![Lekzman Screensnap](https://raw.githubusercontent.com/ktalib/lekzman-vtu/assets/images/2.png)![Lekzman Screensnap](https://raw.githubusercontent.com/ktalib/lekzman-vtu/assets/images/3.png)![Lekzman Screensnap](https://raw.githubusercontent.com/ktalib/lekzman-vtu/assets/images/4.png)![Lekzman Screensnap](https://raw.githubusercontent.com/ktalib/lekzman-vtu/assets/unages/5.png)
 
 ## Features ⚡
 
