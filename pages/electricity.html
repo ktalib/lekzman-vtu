@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lekzman Dashboard - Nigerian VTU & Electricity</title>
+ <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @media (max-width: 768px) {
+            .sidebar-open {
+                transform: translateX(0);
+            }
+            .sidebar-closed {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="flex h-screen">
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-button" class="md:hidden fixed top-4 left-4 z-50 bg-blue-800 text-white p-2 rounded-md">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Sidebar -->
+        <div id="sidebar" class="fixed md:static w-64 h-full bg-blue-800 text-white transform transition-transform duration-200 ease-in-out -translate-x-full md:translate-x-0 z-40">
+            <div class="p-4">
+                <div class="flex items-center space-x-2 mb-8">
+                    <img src="https://i.ibb.co/XLZycY9/Whats-App-Image-2024-12-21-at-8-55-54-AM.jpg" alt="Whats-App-Image-2024-12-21-at-8-55-54-AM" alt="Lekzman Logo" class="h-10 w-10 rounded-full">
+                    <span class="text-xl font-bold">Lekzman</span>
+                </div>
+                <nav class="space-y-2">
+                    <a href="#" class="block p-3 rounded-lg bg-blue-900">
+                        <i class="fas fa-home mr-2"></i> Dashboard
+                    </a>
+                    <a href="electricity.html" class="block p-3 rounded-lg hover:bg-blue-700">
+                        <i class="fas fa-bolt mr-2"></i> Electricity
+                    </a>
+                     
+                    <a href="history.html" class="block p-3 rounded-lg hover:bg-blue-700">
+                        <i class="fas fa-history mr-2"></i> History
+                    </a>
+                    <a href="profile.html" class="block p-3 rounded-lg hover:bg-blue-700">
+                        <i class="fas fa-user mr-2"></i> Profile
+                    </a>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-1 overflow-auto">
+            <!-- Top Header -->
+            <header class="bg-white shadow-sm p-4 sticky top-0 z-30">
+                <div class="flex justify-between items-center">
+                    <h1 class="text-2xl font-bold text-gray-800 ml-12 md:ml-0">Profile</h1>
+                    <div class="flex items-center space-x-4">
+                        <div class="relative">
+                            <i class="fas fa-bell text-gray-600"></i>
+                            <span class="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">3</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                             <img src="https://i.ibb.co/ZKvBT9k/Whats-App-Image-2024-12-21-at-9-00-22-AM.jpg" alt="Whats-App-Image-2024-12-21-at-8-55-54-AM" alt="Profile" class="h-8 w-8 rounded-full">
+                            <span class="text-sm text-gray-600">GT Obadiah</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Banner Slider -->
+            <div class="relative w-full h-48 bg-gray-200 overflow-hidden">
+                <div id="slider" class="flex transition-transform duration-500 h-full">
+                    <div class="w-full flex-shrink-0 bg-gradient-to-r from-blue-600 to-blue-400 p-8 flex items-center">
+                        <div class="text-white">
+                            <h2 class="text-2xl font-bold mb-2">Welcome to Lekzman</h2>
+                            <p>Your trusted platform for electricity payments and airtime top-up</p>
+                        </div>
+                    </div>
+                    <div class="w-full flex-shrink-0 bg-gradient-to-r from-purple-600 to-purple-400 p-8 flex items-center">
+                        <div class="text-white">
+                            <h2 class="text-2xl font-bold mb-2">Quick VTU Top-up</h2>
+                            <p>Recharge any network instantly</p>
+                        </div>
+                    </div>
+                    <div class="w-full flex-shrink-0 bg-gradient-to-r from-green-600 to-green-400 p-8 flex items-center">
+                        <div class="text-white">
+                            <h2 class="text-2xl font-bold mb-2">Pay Electricity Bills</h2>
+                            <p>Fast and secure electricity payments</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slider Controls -->
+                <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                    <button class="w-2 h-2 rounded-full bg-white opacity-50 hover:opacity-100"></button>
+                    <button class="w-2 h-2 rounded-full bg-white opacity-50 hover:opacity-100"></button>
+                    <button class="w-2 h-2 rounded-full bg-white opacity-50 hover:opacity-100"></button>
+                </div>
+            </div>
+
+           <main class="p-6">
+              <div class="bg-white rounded-lg shadow p-6 mb-8">
+            <h2 class="text-lg font-semibold mb-4">User Profile</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <p class="text-sm text-gray-600">Full Name</p>
+                    <p class="font-medium">GT Obadiah</p>
+                </div>
+                <div>
+                    <p class="text-sm text-gray-600">Email</p>
+                    <p class="font-medium">gtobadiah@gmail.com</p>
+                </div>
+                <div>
+                    <p class="text-sm text-gray-600">Phone</p>
+                    <p class="font-medium">08056834844</p>
+                </div>
+                <div>
+                    <p class="text-sm text-gray-600">Address</p>
+                    <p class="font-medium">Gaduge popa, Nasarawa State</p>
+                </div>
+            </div>
+        </div>
+            </main> 
+
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const sidebar = document.getElementById('sidebar');
+        let isSidebarOpen = false;
+
+        mobileMenuButton.addEventListener('click', () => {
+            isSidebarOpen = !isSidebarOpen;
+            if (isSidebarOpen) {
+                sidebar.classList.remove('-translate-x-full');
+            } else {
+                sidebar.classList.add('-translate-x-full');
+            }
+        });
+
+        // Banner slider functionality
+        const slider = document.getElementById('slider');
+        let currentSlide = 0;
+        const slideCount = 3;
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slideCount;
+            slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        // Auto-advance slides every 5 seconds
+        setInterval(nextSlide, 5000);
+    </script>
+</body>
+</html>
